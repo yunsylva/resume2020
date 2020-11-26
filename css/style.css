@@ -1,0 +1,253 @@
+
+*,*:before,*:after{
+    /* outline: 1px solid; */
+    box-sizing: border-box;    
+}
+body {
+    font-family: '微軟正黑體','Roboto', sans-serif;
+}
+img {
+    display: block;
+}
+
+/* 間距調整 */
+
+.pl-48{
+    padding-left: 48px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-72{
+    margin-bottom: 72px;
+}
+.pb-72{
+    padding-bottom: 72px;
+}
+
+/* 外容器 */
+.wrap{
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 48px;
+    border: 1px solid #DDD;
+}
+
+/* 改背景色 */
+/* .wrap::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f7e7ba;
+    z-index: -2;
+} */
+
+/* 內容器 */
+.inner-wrap{
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+/*header*/
+.name{
+    font:80px/90px 'Andale Mono','微軟正黑體',sans-serif;
+    text-align: left;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #000;
+}
+
+/* 各項h2標題設定 */
+.content-title{
+    padding-bottom: 8px;
+    border-bottom: 1px solid;
+    margin-bottom: 16px;
+    line-height: 45px;
+    font-size: 32px;    
+    font-weight: bold;
+}
+
+.content-title-eng{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-left: 16px;
+}
+.text-red{
+    color: #A00404;
+}
+
+
+/* 各項內容設定 */
+.content-text{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.text-white{
+    color: white;
+    background-color: #415165;
+    border: 1px solid #415165;
+}
+
+
+
+/* profile圓點 */
+.pro-circle{
+    position: relative;
+}
+.pro-circle::after{
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+}
+
+/* 照片 */
+
+.myPhoto{
+    width: 375px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+/* 學歷 */
+
+.edu .content-text{
+    padding-left: 32px;
+}
+
+/* edu圓點 */
+.edu-circle{
+    position: relative;
+    left: 16px;
+}
+.edu-circle::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -32px;
+    transform: translateY(-8px);
+    width: 16px;
+    height: 16px;
+    background-color: #96A9C4;
+    border-radius: 50%;
+}
+
+/* 時間軸 */
+.timeline{
+    position: relative;
+}
+.timeline::after{
+    position: absolute;
+    content: '';
+    top: 25%;
+    bottom: 17%;
+    left: 24px;
+    width: 1px;
+    background-color: #96A9C4;    
+    margin-right: 16px;
+}
+
+
+/* 技能 */
+.skill{
+    position: relative;
+    width: 62.5%;
+    margin: 0 auto 72px auto;
+}
+.skill::before{
+    position: absolute;
+    content: '';
+    width: 1920px;
+    height: 360px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -360px;
+    background-color: #96A9C4;
+    z-index: -1;
+
+}
+.skill .content-title{
+    margin: 0 auto 40px auto;
+    width: 83%;
+    text-align:center;
+    padding-top: 24px;
+}
+.skill ul{
+    width: 216px;
+    margin: 0 auto;
+    padding-left: 23px;
+    border-left: 1px solid #96A9C4;
+    margin-bottom: 56px;
+}
+
+/* 工作經驗 */
+.workExp img{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.workExp-content{
+    width: 53.5%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+/* 工作經驗 : 左框線*/
+.workExp .content-text{
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;
+}
+
+.workExp li, .edu .li-1{
+    margin-bottom: 32px;
+}
+
+/* 頁尾 */
+
+footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+footer .content-title{
+    width: 62.5%;
+    margin: 0 auto 36px auto;
+    text-align: center;
+}
+.footer-contact{
+    text-align: center;
+    margin-bottom: 16px;
+}
+.footer-contact li{
+    margin-top: 16px;
+}
+.footer-contact a{
+    text-decoration: none;
+    color: white;
+}
+
+/* 社群連結 */
+.footer-link{
+    display: flex;  
+    margin: 0 auto;
+    width: 192px;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+

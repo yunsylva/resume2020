@@ -1,0 +1,132 @@
+<!-- 視差滾動版本 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- AOS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>履歷-羅巧昀</title>
+</head>
+<body>
+    <!-- 外容器 -->
+    <div class="wrap">
+        <!-- 內容器 -->
+        <div class="inner-wrap">
+            <!-- 標題及照片 -->
+            <div class="header">
+                <h1 class="name mb-48 " data-aos="fade-left" data-aos-duration="1500">羅巧昀</h1>
+                <img class="mb-48 myPhoto" data-aos="zoom-in" data-aos-duration="1500" src="img/2020-05-02-12-28-35-467.jpg" alt="photo">
+            </div>
+            
+            <!-- 個人資料 -->
+            <div class="profile">                
+                <h2 class="content-title" data-aos="fade-up">
+                    個人資料<span class="content-title-eng text-red">PROFILE</span>
+                </h2>               
+                <ul class="content-text pl-48" data-aos="fade-left">
+                    <li class="pro-circle mb-24">
+                        羅巧昀 Lo Chiao Yun<br>
+                        1993-<br> 
+                    </li>
+                    
+                    <li class="mb-72">
+                        網頁切版／
+                        網頁前端語言／<br>
+                        資料庫串接／
+                        Vue.js學習中<br>   
+                    </li>
+                </ul>            
+            </div>
+            <!-- 學歷 -->
+            <div class="edu mb-72">
+                <h2 class="content-title" data-aos="fade-up">
+                    學歷<span class="content-title-eng text-red">EDUCATION</span>
+                </h2>                                    
+                <ul class="content-text timeline" data-aos="fade-left">
+                    <li class="edu-circle li-1">東海大學 餐旅管理學系 | 2011－2015</li>
+                    <li class="edu-circle">勞動力發展署 跨平台網頁建置班 | 2019－2020</li>
+                </ul>
+            </div>
+        </div>    
+
+        <!-- 技能 -->
+        <div class="skill text-white">
+            <h2 class="content-title" data-aos="fade-up">
+                技能<span class="content-title-eng">SKILLS</span>
+            </h2>
+            <ul class="content-text">
+                <li data-aos="fade-left">HTML5</li>
+                <li data-aos="fade-left">CSS3</li>
+                <li data-aos="fade-left">jQuery</li>
+                <li data-aos="fade-left">Bootstrap4</li>
+                <li data-aos="fade-left">Git</li>
+                <li data-aos="fade-left">Photoshop</li>
+                <li data-aos="fade-left">Adobe Illustrator</li>
+                <li data-aos="fade-left">語言：</li>
+                <li data-aos="fade-left">中文、英文、台語、日語、韓語</li>
+            </ul>
+        </div>
+
+        <!-- 工作經驗  套用內容器樣式 -->
+        <div class="workExp inner-wrap pb-72">  
+            <h2 class="content-title" data-aos="fade-up">
+                工作經驗<span class="content-title-eng text-red">WORK EXPERIENCE</span>
+            </h2>
+                
+            <ul class="content-text">
+                <li class="li-1" data-aos="fade-left">瀚升特殊彩色印刷 業務 | 2018/12－2019/08
+                </li>
+                <li data-aos="fade-left">Uomisaki Hotel 房務員 | 2018/03－2018/06</li>
+                <li data-aos="fade-left">Sun Delica 食品作業員 | 2017/06－2018/02</li>
+                <li data-aos="fade-left">長昕生活公司 行政 | 2016/02－2017/05</li>
+                <li class="li-2" data-aos="fade-left">林酒店 財務櫃台 | 2015/08－2015/12</li>
+            </ul>
+        </div>          
+        
+    </div>    
+    <!-- 頁尾 -->
+    <footer class="text-white">
+        <h2 class="content-title" data-aos="fade-up">
+            聯絡方式<span class="content-title-eng">CONTACT METHOD</span>
+        </h2>
+        
+        <ul class="footer-contact content-text" data-aos="fade-up">
+            <li>Mail：chiaoyunlo@gmail.com</li>
+            <li>Phone：0988357518</li>
+            <li>Taichung, Taiwan</li>
+        </ul>
+    </footer>
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+</html>
